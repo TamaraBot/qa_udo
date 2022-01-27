@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: online_tusur.unit_online_tusur.Zadanie3ParamTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.07 s <<< FAILURE! - in online_tusur.unit_online_tusur.Zadanie3ParamTest
+testWithCSVSource{int, int}[1]  Time elapsed: 0.029 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/testng/Assert
+	at online_tusur.unit_online_tusur.Zadanie3ParamTest.testWithCSVSource(Zadanie3ParamTest.java:25)
+Caused by: java.lang.ClassNotFoundException: org.testng.Assert
+	at online_tusur.unit_online_tusur.Zadanie3ParamTest.testWithCSVSource(Zadanie3ParamTest.java:25)
+
+testWithCSVSource{int, int}[2]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/testng/Assert
+	at online_tusur.unit_online_tusur.Zadanie3ParamTest.testWithCSVSource(Zadanie3ParamTest.java:25)
+
+testWithCSVSource{int, int}[3]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/testng/Assert
+	at online_tusur.unit_online_tusur.Zadanie3ParamTest.testWithCSVSource(Zadanie3ParamTest.java:25)
+

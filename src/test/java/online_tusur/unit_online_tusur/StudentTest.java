@@ -9,7 +9,9 @@ public class StudentTest {
 	/*объект тестового класса  Student*/
 	private Student s = new Student();	 	   
 
-	    
+	
+	
+	
 //проверка возраста студента, входящий в диапазон
 	  @Test
 	  @Tag("positive")

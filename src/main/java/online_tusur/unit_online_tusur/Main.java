@@ -19,17 +19,17 @@ public class Main {
 			Student s3 = new Student("kONStantin","petrov", 33);
 			
 			System.out.println(s1.getFullName() + ", " + s1.getAge());
-			//System.out.println(s2.getFullName() + ", " + s2.getAge());
-			//System.out.println(s3.getFullName() + ", " + s3.getAge());
+			System.out.println(s2.getFullName() + ", " + s2.getAge());
+			System.out.println(s3.getFullName() + ", " + s3.getAge());
 			
 			
 			Student[] students = { s1,s2,s3};
 			  Student[] students2 = {new Student("Alexandr", "Ivanov", 20), new Student("Vladimir", "Petrov", 18),
 						new Student("Aleksey", "Alekseev", 35)};
 			
-			//System.out.println("AVG= "+Student.avgAge(students2));
-			//System.out.println("MAX= "+Student.maxAge(students));
-			//System.out.println("MIN= "+Student.minAge(students));
+			System.out.println("AVG= "+Student.avgAge(students2));
+			System.out.println("MAX= "+Student.maxAge(students));
+			System.out.println("MIN= "+Student.minAge(students));
 			
 			
 		   
