@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <parameter name="a" value="18"/>
+  <parameter name="b" value="25"/>
+  <parameter name="c" value="50"/>
+  <parameter name="d" value="18"/>
+  
+    <classes>
+      <class name="online_tusur.unit_online_tusur.Test_NG"/>
+      <class name="online_tusur.unit_online_tusur.ParamTest"/>
+      <class name="online_tusur.unit_online_tusur.Zadanie3ParamTest"/>
+      <class name="online_tusur.unit_online_tusur.StudentTest"/>
+      <class name="online_tusur.unit_online_tusur.DynamicTestPrimer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="online_tusur.unit_online_tusur.StudentTestng">
+      <class name="online_tusur.unit_online_tusur.Test_NG">
         <methods>
-          <include name="test_FullName_L" invocation-numbers="4"/>
-          <include name="test4_FullName"/>
-          <include name="test6_FullName"/>
-          <include name="test5_FullName"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TestAge" invocation-numbers="2"/>
         </methods>
-      </class> <!-- online_tusur.unit_online_tusur.StudentTestng -->
+      </class> <!-- online_tusur.unit_online_tusur.Test_NG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
