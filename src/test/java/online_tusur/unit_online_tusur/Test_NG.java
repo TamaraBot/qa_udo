@@ -18,7 +18,7 @@ public class Test_NG {
 
 	private Student s = new Student();
 	
-
+	@SuppressWarnings("unused")
 	private ArrayList<Student> emp;
 
 		@BeforeTest
