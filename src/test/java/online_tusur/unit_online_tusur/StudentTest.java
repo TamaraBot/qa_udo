@@ -3,8 +3,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 
-
+@Execution(ExecutionMode.CONCURRENT)
 public class StudentTest {
 	/*объект тестового класса  Student*/
 	private Student s = new Student();	 	   
@@ -20,6 +22,8 @@ public class StudentTest {
 		s.setAge(age);
 	    int expectedAge = 30;
 	    int actualsAge=s.getAge();
+	    long id=Thread.currentThread().getId();
+	    System.out.println("thread=" +id);
 	    assertEquals(expectedAge, actualsAge);	
 
 	  }
@@ -32,6 +36,8 @@ public class StudentTest {
 		s.setAge(age);
 	    int expectedAge = 50;
 	    int actualsAge=s.getAge();
+	    long id=Thread.currentThread().getId();
+	    System.out.println("thread=" +id);
 	    assertEquals(expectedAge, actualsAge);	
 	  }
 	 
@@ -43,6 +49,8 @@ public class StudentTest {
 		s.setAge(age);
 	    int expectedAge = 18;
 	    int actualsAge=s.getAge();
+	    long id=Thread.currentThread().getId();
+	    System.out.println("thread=" +id);
 	    assertEquals(expectedAge, actualsAge);	
 	  }
 	
@@ -55,7 +63,9 @@ public class StudentTest {
 		 s.setLastName(fio);
 		 String expectedName= "Petrov";
 		 String actualsName = s.getLastName();
-		 assertEquals(expectedName, actualsName); 	 
+		 long id=Thread.currentThread().getId();
+		    System.out.println("thread=" +id);
+		    assertEquals(expectedName, actualsName); 	 
 	 }
 
 	  //негативный тест на возрат студента, выходящего за диапазон
@@ -66,7 +76,9 @@ public class StudentTest {
 		 s.setAge(age);
 		 int expectedAge=18;
 		 int actualAge = s.getAge();
-		 assertEquals(expectedAge, actualAge); 	 
+		 long id=Thread.currentThread().getId();
+		    System.out.println("thread=" +id);
+		    		 assertEquals(expectedAge, actualAge); 	 
 	 }
 	 
 	 
@@ -78,7 +90,9 @@ public class StudentTest {
 		 s.setFirstName(name);
 		 String expectedName= "Ivan";
 		 String actualsName = s.getFirstName();
-		 assertEquals(expectedName, actualsName); 	 
+		 long id=Thread.currentThread().getId();
+		    System.out.println("thread=" +id);
+		    assertEquals(expectedName, actualsName); 	 
 	 }
 
 	 

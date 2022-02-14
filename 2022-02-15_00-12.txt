@@ -1,0 +1,8 @@
+Отчет
+Failure of test cases and its details are : TestAge
+Success of test cases and its details are : TestAge
+Success of test cases and its details are : TestAge
+Success of test cases and its details are : TestAge
+Success of test cases and its details are : TestNG_SetAvg
+This is onFinish Passed method4
+This is onFinish Failed method1

@@ -28,7 +28,9 @@ public class Test_NG_Dynamic {
 		void TestLastName() {
 			s.setLastName(actual);
 			String actualValue = s.getFirstName();
-			assertEquals(actualValue, expected);
+			long id=Thread.currentThread().getId();
+		    System.out.println("thread=" +id);
+		    assertEquals(actualValue, expected);
 		}
 }
 		

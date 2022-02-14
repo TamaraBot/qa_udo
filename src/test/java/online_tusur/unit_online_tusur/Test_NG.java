@@ -32,16 +32,18 @@ public class Test_NG {
 		}
 	
 	//Тест для сравнения заданных и полученных значений возраста, а также сравнения среднего возраста с нулем
-	@Test
+	@Test (threadPoolSize=5)
 	@Parameters({"a", "d"})
 
 		void TestNG_SetAvg(@Optional("50") int a, @Optional("18") int d) {
 			int param =  a;
 			s.setAge(param);
-			assertEquals(s.getAge(),d);
+			long id=Thread.currentThread().getId();
+		    System.out.println("thread=" +id);
+		    			assertEquals(s.getAge(),d);
 
 		}
-	@DataProvider (name = "data")
+	@DataProvider (name = "data", parallel=true)
 	public static Object[][] getAge() {
 		return new Object[][]{{0,18}, {18,18}, {50,50}, {25,25}};
 	}
@@ -52,6 +54,9 @@ public class Test_NG {
 		s.setAge(input);
 		int actualAge = s.getAge();
 		Student[] array = {s};
+		long id=Thread.currentThread().getId();
+	    System.out.println("thread=" +id);
+	     
 		assertEquals(expected, actualAge);
 		assertNotNull(s.avgAge(array));
 	}
