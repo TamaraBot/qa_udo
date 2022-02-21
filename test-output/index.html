@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,6 +105,21 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="online_tusur.unit_online_tusur.Test_NG" hash-for-method="TestAge(50, 50)">TestAge(50, 50)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="online_tusur.unit_online_tusur.Test_NG" hash-for-method="TestNG_SetFirstName()">TestNG_SetFirstName()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="online_tusur.unit_online_tusur.Test_NG" hash-for-method="TestNG_SetLastName()">TestNG_SetLastName()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="online_tusur.unit_online_tusur.TestMain" hash-for-method="testMain">testMain</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -176,7 +191,7 @@
                   <span class="method-name">TestAge</span>
                   <span class="parameters">(50, 50)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [18] but found [50]
-	at online_tusur.unit_online_tusur.Test_NG.TestAge(Test_NG.java:60)
+	at online_tusur.unit_online_tusur.Test_NG.TestAge(Test_NG.java:85)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -184,6 +199,74 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 ... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestNG_SetFirstName()">
+                  </a> <!-- TestNG_SetFirstName() -->
+                  <span class="method-name">TestNG_SetFirstName</span>
+                  <span class="parameters">()</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected null, but was:&lt;&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotNull(Assert.java:756)
+	at org.junit.Assert.assertNull(Assert.java:738)
+	at org.junit.Assert.assertNull(Assert.java:748)
+	at online_tusur.unit_online_tusur.Test_NG.TestNG_SetFirstName(Test_NG.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestNG_SetLastName()">
+                  </a> <!-- TestNG_SetLastName() -->
+                  <span class="method-name">TestNG_SetLastName</span>
+                  <span class="parameters">()</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected null, but was:&lt;&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotNull(Assert.java:756)
+	at org.junit.Assert.assertNull(Assert.java:738)
+	at org.junit.Assert.assertNull(Assert.java:748)
+	at online_tusur.unit_online_tusur.Test_NG.TestNG_SetLastName(Test_NG.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">online_tusur.unit_online_tusur.TestMain</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMain">
+                  </a> <!-- testMain -->
+                  <span class="method-name">testMain</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Ботвинкина Tamara, 18
+Nikulin Ivan, 18
+Petrov Konstantin, 33
+AVG= 24
+MAX= 33
+MIN= 18
+] but found [Ivan Sidorov
+MAX=33
+]
+	at online_tusur.unit_online_tusur.TestMain.testMain(TestMain.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -273,9 +356,12 @@
     &lt;parameter name=&quot;b&quot; value=&quot;25&quot;/&gt;
     &lt;parameter name=&quot;c&quot; value=&quot;50&quot;/&gt;
     &lt;parameter name=&quot;d&quot; value=&quot;18&quot;/&gt;
+    &lt;parameter name=&quot;e&quot; value=&quot;&quot;/&gt;
+    &lt;parameter name=&quot;f&quot; value=&quot;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;online_tusur.unit_online_tusur.Test_NG&quot;/&gt;
       &lt;class name=&quot;online_tusur.unit_online_tusur.Test_NG_Dynamic&quot;/&gt;
+      &lt;class name=&quot;online_tusur.unit_online_tusur.TestMain&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -289,7 +375,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -315,44 +401,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestLastName')
 data.setCell(0, 2, 'online_tusur.unit_online_tusur.Test_NG_Dynamic')
-data.setCell(0, 3, 89);
+data.setCell(0, 3, 50);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestLastName')
-data.setCell(1, 2, 'online_tusur.unit_online_tusur.Test_NG_Dynamic')
-data.setCell(1, 3, 89);
+data.setCell(1, 1, 'TestNG_SetLastName')
+data.setCell(1, 2, 'online_tusur.unit_online_tusur.Test_NG')
+data.setCell(1, 3, 41);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TestLastName')
-data.setCell(2, 2, 'online_tusur.unit_online_tusur.Test_NG_Dynamic')
-data.setCell(2, 3, 89);
+data.setCell(2, 1, 'TestNG_SetFirstName')
+data.setCell(2, 2, 'online_tusur.unit_online_tusur.Test_NG')
+data.setCell(2, 3, 40);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TestAge')
 data.setCell(3, 2, 'online_tusur.unit_online_tusur.Test_NG')
-data.setCell(3, 3, 57);
+data.setCell(3, 3, 36);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TestAge')
 data.setCell(4, 2, 'online_tusur.unit_online_tusur.Test_NG')
-data.setCell(4, 3, 56);
+data.setCell(4, 3, 36);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TestAge')
 data.setCell(5, 2, 'online_tusur.unit_online_tusur.Test_NG')
-data.setCell(5, 3, 56);
+data.setCell(5, 3, 35);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TestNG_SetAvg')
-data.setCell(6, 2, 'online_tusur.unit_online_tusur.Test_NG')
-data.setCell(6, 3, 14);
+data.setCell(6, 1, 'TestLastName')
+data.setCell(6, 2, 'online_tusur.unit_online_tusur.Test_NG_Dynamic')
+data.setCell(6, 3, 28);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TestAge')
+data.setCell(7, 1, 'TestNG_SetAvg')
 data.setCell(7, 2, 'online_tusur.unit_online_tusur.Test_NG')
-data.setCell(7, 3, 10);
+data.setCell(7, 3, 15);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TestAge')
+data.setCell(8, 2, 'online_tusur.unit_online_tusur.Test_NG')
+data.setCell(8, 3, 13);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TestLastName')
+data.setCell(9, 2, 'online_tusur.unit_online_tusur.Test_NG_Dynamic')
+data.setCell(9, 3, 7);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testMain')
+data.setCell(10, 2, 'online_tusur.unit_online_tusur.TestMain')
+data.setCell(10, 3, 6);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 143 ms</span>
+              <span class="suite-total-time">Total running time: 116 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -383,55 +481,76 @@ return data;
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestNG_SetFirstName()</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestNG_SetLastName()</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">online_tusur.unit_online_tusur.Test_NG_Dynamic</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestLastName</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">51 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">online_tusur.unit_online_tusur.Test_NG</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestNG_SetAvg(18, 18)</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestAge(50, 50)</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestAge(18, 18)</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestAge(25, 25)</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestAge(0, 18)</span>
+                <span class="method-start">54 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">online_tusur.unit_online_tusur.Test_NG_Dynamic</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestLastName</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">73 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestLastName</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online_tusur.unit_online_tusur.TestMain</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMain</span>
+                <span class="method-start">95 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">online_tusur.unit_online_tusur.Test_NG</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TestAge(0, 18)</span>
-                <span class="method-start">47 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TestAge(50, 50)</span>
-                <span class="method-start">48 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestAge(25, 25)</span>
-                <span class="method-start">48 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestAge(18, 18)</span>
-                <span class="method-start">48 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">139 ms</span>
+                <span class="method-start">106 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,5 +1,6 @@
 package online_tusur.unit_online_tusur;
 
+import static org.junit.Assert.assertNull;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
@@ -43,6 +44,30 @@ public class Test_NG {
 		    			assertEquals(s.getAge(),d);
 
 		}
+	@Test 
+	@Parameters({"f"})
+
+		void TestNG_SetFirstName(@Optional("") String f) {
+			String param =  f;
+			s.setFirstName(param);
+			long id=Thread.currentThread().getId();
+		    System.out.println("thread=" +id);
+		    			assertNull(s.getFirstName());
+
+		}
+	
+	
+	@Test 
+	@Parameters({"e"})
+
+		void TestNG_SetLastName(@Optional("") String e) {
+			String param =  e;
+			s.setLastName(param);
+			long id=Thread.currentThread().getId();
+		    System.out.println("thread=" +id);
+		    			assertNull(s.getLastName());
+
+		}
 	@DataProvider (name = "data", parallel=true)
 	public static Object[][] getAge() {
 		return new Object[][]{{0,18}, {18,18}, {50,50}, {25,25}};
@@ -59,6 +84,8 @@ public class Test_NG {
 	     
 		assertEquals(expected, actualAge);
 		assertNotNull(s.avgAge(array));
+		assertNotNull(s.minAge(array));
+		assertNotNull(s.maxAge(array));
 	}
 	}
 	

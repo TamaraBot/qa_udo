@@ -8,10 +8,13 @@
   <parameter name="b" value="25"/>
   <parameter name="c" value="50"/>
   <parameter name="d" value="18"/>
+  <parameter name="e" value=""/>
+  <parameter name="f" value=""/>
   
     <classes>
       <class name="online_tusur.unit_online_tusur.Test_NG"/>
       <class name="online_tusur.unit_online_tusur.Test_NG_Dynamic"/>
+     <class name="online_tusur.unit_online_tusur.TestMain"/>
       
       
     </classes>

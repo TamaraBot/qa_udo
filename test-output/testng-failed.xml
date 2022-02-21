@@ -6,14 +6,23 @@
     <parameter name="b" value="25"/>
     <parameter name="c" value="50"/>
     <parameter name="d" value="18"/>
+    <parameter name="e" value=""/>
+    <parameter name="f" value=""/>
     <classes>
       <class name="online_tusur.unit_online_tusur.Test_NG">
         <methods>
+          <include name="TestNG_SetFirstName" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="TestNG_SetLastName" invocation-numbers="0"/>
           <include name="TestAge" invocation-numbers="2"/>
         </methods>
       </class> <!-- online_tusur.unit_online_tusur.Test_NG -->
+      <class name="online_tusur.unit_online_tusur.TestMain">
+        <methods>
+          <include name="testMain"/>
+        </methods>
+      </class> <!-- online_tusur.unit_online_tusur.TestMain -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
