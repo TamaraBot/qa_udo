@@ -4,13 +4,13 @@
 <test name="FirefoxTest" verbose="1" parallel="true">
 <parameter name="browser" value="firefox" />
 <classes>
-<class name="TestGrid4TestNG"/>
+<class name="PrimerTestNG"/>
 </classes>
 </test>
 <test name="ChromeTest" verbose="1" parallel="true">
 <parameter name="browser" value="chrome" />
 <classes>
-<class name="newTriangle.TestNGGrid"/>
+<class name="PrimerTestNG"/>
 </classes>
 </test>
 </suite> <!-- Suite -->

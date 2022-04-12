@@ -5,12 +5,17 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+
 import static org.junit.Assert.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.Dimension;
-//import java.lang.NullPointerException;
+
+import io.qameta.allure.Attachment;
 
 
 public class TriangleTest {
@@ -28,6 +33,17 @@ public class TriangleTest {
   public void tearDown() {
     driver.quit();
   }
+  
+  @AfterEach
+  public void takeScreenTest() {
+      makeScreenshot();
+  }
+
+@Attachment(value = "Attachment Screenshot", type = "image/png")
+  public byte[] makeScreenshot() {
+      return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+  }
+  
   
   @Test
   public void acuteScaleneTriangle() {
